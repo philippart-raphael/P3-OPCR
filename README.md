@@ -1,1 +1,3 @@
-# P3-OPCR
+# P3 OpenClassRooms
+
+Philippart Raphaël
