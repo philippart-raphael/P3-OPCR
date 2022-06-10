@@ -1,0 +1,28 @@
+{
+  "name": "p3",
+  "version": "1.0.0",
+  "description": "Philippart Raphaël",
+  "main": "index.js",
+  "scripts": {
+    "sass-dev": "sass ./sass/main.scss:./public/css/main.css -w",
+    "sass-prod": "sass ./sass/main.scss:./public/css/main.css --style compressed",
+    "prefix": "postcss ./public/css/main.css --use autoprefixer -d ./public/css/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/philippart-raphael/P3-OPCR.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/philippart-raphael/P3-OPCR/issues"
+  },
+  "homepage": "https://github.com/philippart-raphael/P3-OPCR#readme",
+  "dependencies": {
+    "autoprefixer": "^10.4.7",
+    "postcss": "^8.4.14",
+    "postcss-cli": "^9.1.0",
+    "sass": "^1.52.3"
+  }
+}
