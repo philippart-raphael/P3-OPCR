@@ -1,2 +1,14 @@
 @import "./base/reboot";
 @import "./utils/variables";
+@import "./utils/mixins";
+@import "./layout/header";
+
+@include font-face(Roboto, "./../fonts/Roboto/Roboto-Black", normal, normal, ttf);
+@include font-face(Roboto-Ligth, "./../fonts/Roboto/Roboto-Light", normal, normal, ttf);
+@include font-face(Shrikhand, "./../fonts/Shrikhand/Shrikhand-Regular", normal, normal, ttf);
+
+body {
+    color: $color-font-dark;
+    font-family: Roboto, sans-serif;
+    font-size: 16px;
+}
