@@ -46,11 +46,11 @@
             }
         }
         &__icon {
-            flex-basis: 15%;
+            flex-basis: 30%;
             font-size: 2rem;
             text-align: center;
             @include min-desktop {
-                flex-basis: 30%;
+                flex-basis: 40%;
             }
         }
         &__body {
