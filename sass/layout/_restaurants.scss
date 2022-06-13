@@ -10,7 +10,7 @@
     background: darken($color-background-primary, 4%);
     &__title {
         flex-basis: 100%;
-        margin-bottom: 3rem;
+        margin-bottom: 1rem;
     }
     &__article {
         flex-basis: 100%;
@@ -19,6 +19,10 @@
         @include makeBoxShadow($inset: false, $offsetX: 2px, $offSetY: 2px, $blur: 6px, $spreadRadius: 0, $color: #c2c2c2);
         @include min-desktop {
             flex-basis: 49%;
+        }
+        & a {
+            color: $color-font-dark;
+            text-decoration: none;
         }
     }
     &__img {

@@ -161,7 +161,7 @@
 }
 .restaurants__title {
   flex-basis: 100%;
-  margin-bottom: 3rem;
+  margin-bottom: 1rem;
 }
 .restaurants__article {
   flex-basis: 100%;
@@ -173,6 +173,10 @@
   .restaurants__article {
     flex-basis: 49%;
   }
+}
+.restaurants__article a {
+  color: #000;
+  text-decoration: none;
 }
 .restaurants__img {
   height: 180px;
