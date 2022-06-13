@@ -78,7 +78,15 @@
   padding: 1rem 1.5rem;
   border-radius: 2rem;
   background: #FF79DA;
-  background: linear-gradient(180deg, rgba(255, 121, 218, 0.9962359944) 25%, rgb(147, 86, 220) 100%, rgba(5, 101, 247, 0) 100%);
+  background: linear-gradient(to top, #9356DC, #FF79DA);
+  box-shadow: 2px 2px 8px 1px #8f8f8f;
+  transition: all 400ms ease-in-out;
+}
+.btn:hover {
+  color: #000;
+  background: linear-gradient(to top, #a16be0, #ffc6ef);
+  box-shadow: 4px 4px 10px 2px #8f8f8f;
+  transition: all 400ms ease-in-out;
 }
 
 @font-face {

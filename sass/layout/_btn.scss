@@ -1,4 +1,5 @@
 @import "../utils/variables";
+@import "../utils/mixins";
 
 .btn {
     color: white;
@@ -8,4 +9,12 @@
     border-radius: 2rem;
     background: $color-secondary;
     background: $linear-gradient-btn;
+    @include makeBoxShadow($inset: false, $offsetX: 2px, $offSetY: 2px, $blur: 8px, $spreadRadius: 1px, $color: #8f8f8f);
+    transition: all 400ms ease-in-out;
+    &:hover {
+        color: $color-font-dark;
+        background: $linear-gradient-reverse-btn;
+        @include makeBoxShadow($inset: false, $offsetX: 4px, $offSetY: 4px, $blur: 10px, $spreadRadius: 2px, $color: #8f8f8f);
+        transition: all 400ms ease-in-out;
+    }
 }
