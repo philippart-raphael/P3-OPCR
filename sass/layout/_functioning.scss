@@ -1,0 +1,61 @@
+@import "../utils/variables";
+@import "../utils/mixins";
+
+.functioning {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 3rem 2rem;
+    @include min-desktop {
+        justify-content: space-around;
+    }
+    &__title {
+        flex-basis: 100%;
+        margin-bottom: 3rem;
+    }
+    &__card {
+        display: flex;
+        align-items: center;
+        flex-basis: 100%;
+        padding: 2.5rem 0;
+        margin-bottom: 3rem;
+        border-radius: 2rem;
+        background: darken($color-background-primary, 4%);
+        @include makeBoxShadow($inset: false, $offsetX: 2px, $offSetY: 2px, $blur: 6px, $spreadRadius: 0, $color: #c2c2c2);
+        @include min-desktop {
+            flex-basis: 30%;
+        }
+        &--active,
+        &:hover {
+            color: $color-primary;;
+            background: lighten($color-primary, 35%);
+        }
+        &__number {
+            position: relative;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background: $color-primary;
+            margin-left: -15px;
+            & span {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                color: white;
+            }
+        }
+        &__icon {
+            flex-basis: 15%;
+            font-size: 2rem;
+            text-align: center;
+            @include min-desktop {
+                flex-basis: 30%;
+            }
+        }
+        &__body {
+            color: $color-font-dark;
+            flex-basis: 100%;
+        }
+    }
+}

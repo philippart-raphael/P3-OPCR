@@ -2,12 +2,9 @@
 @import "../utils/mixins";
 
 .presentation {
-    padding: 3rem;
+    padding: 4rem 3rem;
     text-align: center;
     background: darken($color-background-primary, 4%);
-    @include desktop {
-        padding: 5rem;
-    }
     &__description {
         font-family: Roboto-Ligth, sans-serif;
     }

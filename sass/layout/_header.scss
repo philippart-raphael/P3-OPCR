@@ -6,11 +6,11 @@
     justify-content: center;
     background: $color-background-primary;
     &__title {
-        font-size: 2.5rem;
+        font-size: 3rem;
         font-weight: 500;
         font-family: Shrikhand, sans-serif;
-        @include desktop {
-            font-size: 3rem;
+        @include min-desktop {
+            font-size: 3.5rem;
         }
     }
     & a {
