@@ -1,0 +1,11 @@
+@import "../utils/variables";
+
+.btn {
+    color: white;
+    text-decoration: none;
+    font-family: Roboto-Ligth, sans-serif;
+    padding: 1rem 1.5rem;
+    border-radius: 2rem;
+    background: $color-secondary;
+    background: $linear-gradient-btn;
+}

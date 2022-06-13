@@ -1,0 +1,25 @@
+@import "../utils/variables";
+@import "../utils/mixins";
+
+.search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: darken($color-background-primary, 7%);
+    @include makeBoxShadow($inset: true, $offsetX: 0, $offSetY: 5px, $blur: 5px, $spreadRadius: 0, $color: #dddddd);
+    &__form input {
+        width: 100%;
+        padding: 15px 5px 15px 5px;
+        margin-top: 5px;
+        font-size: 1rem;
+        text-align: center;
+        font-weight: bold;
+        border: none;
+        background: darken($color-background-primary, 7%);
+        color: $color-font-dark;
+    }
+    & i {
+        font-size: 1.2rem;
+        margin-right: 0;
+    }
+}

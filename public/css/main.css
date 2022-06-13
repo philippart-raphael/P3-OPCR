@@ -1,3 +1,108 @@
-*,::before,::after{box-sizing:border-box;padding:0;margin:0}.header{display:flex;justify-content:center;background:#fff}.header__title{font-family:Shrikhand,sans-serif;font-size:2.5rem;font-weight:500}@media screen and (min-width: 1024px){.header__title{font-size:3rem}}.header a{color:#000;text-decoration:none}@font-face{font-family:"Roboto";font-style:normal;font-weight:normal;src:url("./../fonts/Roboto/Roboto-Black.ttf") format("truetype")}@font-face{font-family:"Roboto-Ligth";font-style:normal;font-weight:normal;src:url("./../fonts/Roboto/Roboto-Light.ttf") format("truetype")}@font-face{font-family:"Shrikhand";font-style:normal;font-weight:normal;src:url("./../fonts/Shrikhand/Shrikhand-Regular.ttf") format("truetype")}body{color:#000;font-family:Roboto,sans-serif;font-size:16px}
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
 
-/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uLy4uL3Nhc3MvYmFzZS9fcmVib290LnNjc3MiLCIuLi8uLi9zYXNzL2xheW91dC9faGVhZGVyLnNjc3MiLCIuLi8uLi9zYXNzL3V0aWxzL192YXJpYWJsZXMuc2NzcyIsIi4uLy4uL3Nhc3MvdXRpbHMvX21peGlucy5zY3NzIiwiLi4vLi4vc2Fzcy9tYWluLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUEsbUJBR0kscUJBQUEsQ0FDQSxTQUFBLENBQ0EsUUFBQSxDQ0ZKLFFBQ0ksWUFBQSxDQUNBLHNCQUFBLENBQ0EsZUNIdUIsQ0RJdkIsZUFDSSxnQ0FBQSxDQUNBLGdCQUFBLENBQ0EsZUFBQSxDRW1DSixzQ0Z0Q0EsZUFLUSxjQUFBLENBQUEsQ0FHUixVQUNJLFVDWlUsQ0RhVixvQkFBQSxDRWNKLFdBQ0ksb0JBQUEsQ0FDQSxpQkM1QjZELENENkI3RCxrQkM3QnFELENEOEJyRCxnRUFQTSxDQUdWLFdBQ0ksMEJBQUEsQ0FDQSxpQkMzQm1FLENENEJuRSxrQkM1QjJELENENkIzRCxnRUFQTSxDQUdWLFdBQ0ksdUJBQUEsQ0FDQSxpQkMxQndFLENEMkJ4RSxrQkMzQmdFLENENEJoRSx3RUFQTSxDQ25CZCxLQUNJLFVGTmMsQ0VPZCw2QkFBQSxDQUNBLGNBQUEiLCJmaWxlIjoibWFpbi5jc3MifQ== */
+.header {
+  display: flex;
+  justify-content: center;
+  background: #FFF;
+}
+.header__title {
+  font-size: 2.5rem;
+  font-weight: 500;
+  font-family: Shrikhand, sans-serif;
+}
+@media screen and (max-width: 1024px) {
+  .header__title {
+    font-size: 3rem;
+  }
+}
+.header a {
+  color: #000;
+  text-decoration: none;
+}
+
+.search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #ededed;
+  box-shadow: inset 0 5px 5px 0 #dddddd;
+}
+.search__form input {
+  width: 100%;
+  padding: 15px 5px 15px 5px;
+  margin-top: 5px;
+  font-size: 1rem;
+  text-align: center;
+  font-weight: bold;
+  border: none;
+  background: #ededed;
+  color: #000;
+}
+.search i {
+  font-size: 1.2rem;
+  margin-right: 0;
+}
+
+.presentation {
+  padding: 3rem;
+  text-align: center;
+  background: whitesmoke;
+}
+@media screen and (max-width: 1024px) {
+  .presentation {
+    padding: 5rem;
+  }
+}
+.presentation__description {
+  font-family: Roboto-Ligth, sans-serif;
+}
+
+.mb-10 {
+  margin-bottom: 2rem;
+}
+
+.mb-20 {
+  margin-bottom: 4rem;
+}
+
+.btn {
+  color: white;
+  text-decoration: none;
+  font-family: Roboto-Ligth, sans-serif;
+  padding: 1rem 1.5rem;
+  border-radius: 2rem;
+  background: #FF79DA;
+  background: linear-gradient(180deg, rgba(255, 121, 218, 0.9962359944) 25%, rgb(147, 86, 220) 100%, rgba(5, 101, 247, 0) 100%);
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: normal;
+  src: url("./../fonts/Roboto/Roboto-Black.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Roboto-Ligth";
+  font-style: normal;
+  font-weight: normal;
+  src: url("./../fonts/Roboto/Roboto-Light.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Shrikhand";
+  font-style: normal;
+  font-weight: normal;
+  src: url("./../fonts/Shrikhand/Shrikhand-Regular.ttf") format("truetype");
+}
+body {
+  color: #000;
+  font-family: Roboto, sans-serif;
+  font-size: 16px;
+}
+
+/*# sourceMappingURL=main.css.map */

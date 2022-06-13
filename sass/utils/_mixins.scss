@@ -37,13 +37,21 @@
     }
 }
 
+@mixin makeBoxShadow($inset: false, $offsetX: 0, $offSetY: 0, $blur: 0, $spreadRadius: 0, $color: #000) {
+    @if $inset {
+        box-shadow: inset $offsetX $offSetY $blur $spreadRadius $color;
+    } @else {
+        box-shadow: $offsetX $offSetY $blur $spreadRadius $color;
+    }
+}
+
 @mixin tablet {
-    @media screen and (min-width:map-get($breakpoints, tablet)){
+    @media screen and (max-width:map-get($breakpoints, tablet)){
         @content;
     }
 }
 @mixin desktop {
-    @media screen and (min-width:map-get($breakpoints, desktop)){
+    @media screen and (max-width:map-get($breakpoints, desktop)){
         @content;
     }
 }
