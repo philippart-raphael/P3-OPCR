@@ -7,7 +7,7 @@
     justify-content: center;
     padding: 3rem 2rem;
     @include min-desktop {
-        justify-content: space-around;
+        justify-content: space-between;
     }
     & a {
         flex-basis: 100%;

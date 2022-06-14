@@ -92,7 +92,7 @@
 }
 @media screen and (min-width: 1024px) {
   .functioning {
-    justify-content: space-around;
+    justify-content: space-between;
   }
 }
 .functioning a {
