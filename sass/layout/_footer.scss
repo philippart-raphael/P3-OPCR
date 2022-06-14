@@ -1,0 +1,30 @@
+
+
+.footer {
+    color: white;
+    background: #353535;
+    padding: 2rem;
+    & ul {
+        list-style-type: none;
+        font-family: Roboto-Ligth, sans-serif;
+        & li:first-child {
+            margin-bottom: 2rem;
+            font-size: 2rem;
+            font-family: Shrikhand, sans-serif;
+        }
+        & li {
+            margin-bottom: 1rem;
+            & a {
+                display: flex;
+
+                color: white;
+                text-decoration: none;
+                & i {
+                    flex-basis: 2%;
+                    width: 20px;
+                    height: 20px;
+                }
+            }
+        }
+    }
+}

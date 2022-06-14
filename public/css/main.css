@@ -230,6 +230,34 @@
   transition: opacity 600ms ease-in-out;
 }
 
+.footer {
+  color: white;
+  background: #353535;
+  padding: 2rem;
+}
+.footer ul {
+  list-style-type: none;
+  font-family: Roboto-Ligth, sans-serif;
+}
+.footer ul li:first-child {
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  font-family: Shrikhand, sans-serif;
+}
+.footer ul li {
+  margin-bottom: 1rem;
+}
+.footer ul li a {
+  display: flex;
+  color: white;
+  text-decoration: none;
+}
+.footer ul li a i {
+  flex-basis: 2%;
+  width: 20px;
+  height: 20px;
+}
+
 @font-face {
   font-family: "Roboto";
   font-style: normal;
