@@ -269,6 +269,183 @@
   height: 20px;
 }
 
+@keyframes slideBottomToTop {
+  0% {
+    opacity: 0;
+    transform: translateY(2rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.restaurantSection {
+  padding: 3rem;
+  border-radius: 3rem 3rem 0 0;
+  background: #FFF;
+  transform: translateY(-3rem);
+  /*& article &__card {
+
+      & > div:first-child {
+
+          & {
+              padding: 1rem;
+          }
+          & > p {
+              white-space: nowrap;
+              text-overflow: ellipsis;
+              overflow: hidden;
+          }
+          & > p:last-child {
+              display: flex;
+              justify-content: space-between;
+              font-family: Roboto-Ligth, sans-serif;
+              & > span {
+                  font-family: Roboto, sans-serif;
+              }
+          }
+      }
+      & > div:last-child {
+          height: 100%;
+          width: 0;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-basis: 0;
+          opacity: 0;
+          transition: all 600ms ease-in-out;
+          & > div {
+              width: 2.5rem;
+              height: 2.5rem;
+              & > svg {
+                  color: white;
+                  transform: rotate(-360deg);
+                  transition: all 500ms ease-in-out;
+              }
+          }
+      }
+      &:hover > div:last-child {
+          width: 40%;
+          opacity: 1;
+          transition: all 500ms ease-in-out;
+          background: $color-tertiary;
+      }
+      &:hover > div:last-child > div > svg {
+          transform: rotate(0);
+      }
+  }*/
+}
+.restaurantSection header {
+  display: flex;
+  justify-content: space-between;
+}
+.restaurantSection article header {
+  position: relative;
+  text-transform: uppercase;
+  font-family: Roboto-Ligth, sans-serif;
+  margin: 3rem 0 2rem 0;
+}
+.restaurantSection article header::after {
+  position: absolute;
+  content: "";
+  bottom: -4px;
+  left: 0;
+  height: 3px;
+  width: 5%;
+  background: #99E2D0;
+}
+.restaurantSection__card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 5rem;
+  width: 100%;
+  opacity: 0;
+  margin: 1rem 0;
+  border-radius: 1rem;
+  overflow: hidden;
+  text-decoration: none;
+  color: #000;
+  box-shadow: 2px 2px 6px 0 #c2c2c2;
+  animation: slideBottomToTop 500ms ease-in-out forwards;
+}
+.restaurantSection__card:nth-child(1) {
+  animation-delay: 75ms;
+}
+.restaurantSection__card:nth-child(2) {
+  animation-delay: 150ms;
+}
+.restaurantSection__card:nth-child(3) {
+  animation-delay: 225ms;
+}
+.restaurantSection__card:nth-child(4) {
+  animation-delay: 300ms;
+}
+.restaurantSection__card:nth-child(5) {
+  animation-delay: 375ms;
+}
+.restaurantSection__card:nth-child(6) {
+  animation-delay: 450ms;
+}
+.restaurantSection__card:nth-child(7) {
+  animation-delay: 525ms;
+}
+.restaurantSection__card:nth-child(8) {
+  animation-delay: 600ms;
+}
+.restaurantSection__card:nth-child(9) {
+  animation-delay: 675ms;
+}
+.restaurantSection__card:nth-child(10) {
+  animation-delay: 750ms;
+}
+.restaurantSection__card:nth-child(11) {
+  animation-delay: 825ms;
+}
+.restaurantSection__card:nth-child(12) {
+  animation-delay: 900ms;
+}
+.restaurantSection__card:nth-child(13) {
+  animation-delay: 975ms;
+}
+.restaurantSection__card:nth-child(14) {
+  animation-delay: 1050ms;
+}
+.restaurantSection__card:nth-child(15) {
+  animation-delay: 1125ms;
+}
+.restaurantSection__card__body {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.restaurantSection__card__body p {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.restaurantSection__card__valid {
+  position: relative;
+  height: 100%;
+  width: 0;
+  opacity: 0;
+  transition: all 400ms ease-in-out;
+}
+.restaurantSection__card__valid > div {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.restaurantSection__card:hover .restaurantSection__card__valid {
+  width: 35%;
+  opacity: 1;
+  background: #99E2D0;
+  transition: all 400ms ease-in-out;
+}
+
 @font-face {
   font-family: "Roboto";
   font-style: normal;

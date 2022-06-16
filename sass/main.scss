@@ -9,6 +9,7 @@
 @import "./layout/functioning";
 @import "./layout/restaurants";
 @import "./layout/footer";
+@import "./layout/menu_restaurant";
 
 @include font-face(Roboto, "./../fonts/Roboto/Roboto-Black", normal, normal, ttf);
 @include font-face(Roboto-Ligth, "./../fonts/Roboto/Roboto-Light", normal, normal, ttf);

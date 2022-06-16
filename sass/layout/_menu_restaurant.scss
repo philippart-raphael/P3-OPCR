@@ -1,0 +1,132 @@
+@import "../utils/variables";
+@import "../utils/mixins";
+@import "../utils/keyframes";
+
+.restaurantSection {
+    padding: 3rem;
+    border-radius: 3rem 3rem 0 0;
+    background: $color-background-primary;
+    transform: translateY(-3rem);
+    & header {
+        display: flex;
+        justify-content: space-between;
+    }
+    & article {
+        & header {
+            position: relative;
+            text-transform: uppercase;
+            font-family: Roboto-Ligth, sans-serif;
+            margin: 3rem 0 2rem 0;
+            &::after {
+                position: absolute;
+                content: '';
+                bottom: -4px;
+                left: 0;
+                height: 3px;
+                width: 5%;
+                background: $color-tertiary;
+            }
+        }
+    }
+    &__card {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 5rem;
+        width: 100%;
+        opacity: 0;
+        margin: 1rem 0;
+        border-radius: 1rem;
+        overflow: hidden;
+        text-decoration: none;
+        color: $color-font-dark;
+        @include makeBoxShadow($inset: false, $offsetX: 2px, $offSetY: 2px, $blur: 6px, $spreadRadius: 0, $color: #c2c2c2);
+        animation: slideBottomToTop 500ms ease-in-out forwards;
+        @for $i from 1 through 15 {
+            &:nth-child(#{$i}) {
+                animation-delay: $i * 75ms;
+            }
+        }
+        &__body {
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+            & p {
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                overflow: hidden;
+            }
+        }
+        &__valid {
+            position: relative;
+            height: 100%;
+            width: 0;
+            opacity: 0;
+            transition: all 400ms ease-in-out;
+            & > div {
+                width: 30px;
+                height: 30px;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+        }
+        &:hover &__valid {
+            width: 35%;
+            opacity: 1;
+            background: $color-tertiary;
+            transition: all 400ms ease-in-out;
+        }
+    }
+    /*& article &__card {
+
+        & > div:first-child {
+
+            & {
+                padding: 1rem;
+            }
+            & > p {
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                overflow: hidden;
+            }
+            & > p:last-child {
+                display: flex;
+                justify-content: space-between;
+                font-family: Roboto-Ligth, sans-serif;
+                & > span {
+                    font-family: Roboto, sans-serif;
+                }
+            }
+        }
+        & > div:last-child {
+            height: 100%;
+            width: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-basis: 0;
+            opacity: 0;
+            transition: all 600ms ease-in-out;
+            & > div {
+                width: 2.5rem;
+                height: 2.5rem;
+                & > svg {
+                    color: white;
+                    transform: rotate(-360deg);
+                    transition: all 500ms ease-in-out;
+                }
+            }
+        }
+        &:hover > div:last-child {
+            width: 40%;
+            opacity: 1;
+            transition: all 500ms ease-in-out;
+            background: $color-tertiary;
+        }
+        &:hover > div:last-child > div > svg {
+            transform: rotate(0);
+        }
+    }*/
+}
