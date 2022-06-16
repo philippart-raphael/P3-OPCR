@@ -30,8 +30,11 @@
         @include makeBoxShadow($inset: false, $offsetX: 2px, $offSetY: 2px, $blur: 6px, $spreadRadius: 0, $color: #c2c2c2);
         &--active,
         &:hover {
-            color: $color-primary;;
+            color: $color-primary;
             background: lighten($color-primary, 35%);
+        }
+        &:hover &__icon {
+            color: $color-primary;
         }
         &__number {
             position: relative;
@@ -49,16 +52,16 @@
             }
         }
         &__icon {
-            flex-basis: 30%;
+            width: 15%;
+            color: gray;
             font-size: 2rem;
             text-align: center;
-            @include min-desktop {
-                flex-basis: 40%;
+            &--active {
+                color: $color-primary;
             }
         }
         &__body {
             color: $color-font-dark;
-            flex-basis: 100%;
         }
     }
 }
