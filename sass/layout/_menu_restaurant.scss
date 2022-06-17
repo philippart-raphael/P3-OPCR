@@ -10,6 +10,8 @@
     & header {
         display: flex;
         justify-content: space-between;
+        font-family: Shrikhand, sans-serif;
+        font-size: 1.2rem;
     }
     & article {
         & header {
@@ -23,7 +25,7 @@
                 bottom: -4px;
                 left: 0;
                 height: 3px;
-                width: 5%;
+                width: 25%;
                 background: $color-tertiary;
             }
         }
@@ -48,14 +50,31 @@
             }
         }
         &__body {
+            width: 100%;
             display: flex;
             justify-content: space-between;
-            flex-direction: column;
             overflow: hidden;
-            & p {
+            padding: 1rem;
+            font-size: 1.2rem;
+            @include min-desktop {
+                font-size: 1.3rem;
+            }
+            & > p:first-child {
                 white-space: nowrap;
                 text-overflow: ellipsis;
                 overflow: hidden;
+                & > span {
+                    font-family: Roboto-Ligth, sans-serif;
+                }
+            }
+            & > p:last-child {
+                display: flex;
+                justify-content: space-between;
+                font-family: Roboto-Ligth, sans-serif;
+                & > span {
+                    align-self: flex-end;
+                    font-family: Roboto, sans-serif;
+                }
             }
         }
         &__valid {
@@ -65,12 +84,18 @@
             opacity: 0;
             transition: all 400ms ease-in-out;
             & > div {
-                width: 30px;
-                height: 30px;
+                width: 25px;
+                height: 25px;
                 position: absolute;
                 top: 50%;
                 left: 50%;
                 transform: translate(-50%, -50%);
+                & svg {
+                    color: white;
+                    opacity: 0;
+                    transform: rotate(-360deg);
+                    transition: all 500ms ease-in-out;
+                }
             }
         }
         &:hover &__valid {
@@ -79,55 +104,17 @@
             background: $color-tertiary;
             transition: all 400ms ease-in-out;
         }
-    }
-    /*& article &__card {
-
-        & > div:first-child {
-
-            & {
-                padding: 1rem;
-            }
-            & > p {
-                white-space: nowrap;
-                text-overflow: ellipsis;
-                overflow: hidden;
-            }
-            & > p:last-child {
-                display: flex;
-                justify-content: space-between;
-                font-family: Roboto-Ligth, sans-serif;
-                & > span {
-                    font-family: Roboto, sans-serif;
-                }
-            }
-        }
-        & > div:last-child {
-            height: 100%;
-            width: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-basis: 0;
-            opacity: 0;
-            transition: all 600ms ease-in-out;
-            & > div {
-                width: 2.5rem;
-                height: 2.5rem;
-                & > svg {
-                    color: white;
-                    transform: rotate(-360deg);
-                    transition: all 500ms ease-in-out;
-                }
-            }
-        }
-        &:hover > div:last-child {
-            width: 40%;
+        &:hover &__valid > div > svg {
             opacity: 1;
-            transition: all 500ms ease-in-out;
-            background: $color-tertiary;
-        }
-        &:hover > div:last-child > div > svg {
             transform: rotate(0);
+            transition: all 500ms ease-in-out;
         }
-    }*/
+        &:hover {
+            cursor: pointer;
+        }
+    }
+    &__btn {
+        display: flex;
+        justify-content: center;
+    }
 }

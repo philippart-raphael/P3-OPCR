@@ -8,9 +8,23 @@
 
 .header {
   display: flex;
+  position: relative;
   flex-wrap: wrap;
   justify-content: center;
   background: #FFF;
+}
+.header > div:first-child {
+  position: relative;
+  flex-basis: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header > div:first-child > a:first-child {
+  position: absolute;
+  left: 5%;
+  top: 50%;
+  transform: translateY(-50%);
 }
 .header__title {
   flex-basis: 100%;
@@ -68,6 +82,14 @@
   font-family: Roboto-Ligth, sans-serif;
 }
 
+.mt-10 {
+  margin-top: 2rem;
+}
+
+.mt-20 {
+  margin-top: 4rem;
+}
+
 .mb-10 {
   margin-bottom: 2rem;
 }
@@ -77,6 +99,8 @@
 }
 
 .btn {
+  display: inline-block;
+  width: auto;
   color: white;
   text-decoration: none;
   font-family: Roboto-Ligth, sans-serif;
@@ -264,9 +288,14 @@
   text-decoration: none;
 }
 .footer ul li a i {
-  flex-basis: 2%;
   width: 20px;
   height: 20px;
+  margin-right: 2%;
+}
+@media screen and (min-width: 1024px) {
+  .footer ul li a i {
+    margin-right: 1%;
+  }
 }
 
 @keyframes slideBottomToTop {
@@ -284,60 +313,12 @@
   border-radius: 3rem 3rem 0 0;
   background: #FFF;
   transform: translateY(-3rem);
-  /*& article &__card {
-
-      & > div:first-child {
-
-          & {
-              padding: 1rem;
-          }
-          & > p {
-              white-space: nowrap;
-              text-overflow: ellipsis;
-              overflow: hidden;
-          }
-          & > p:last-child {
-              display: flex;
-              justify-content: space-between;
-              font-family: Roboto-Ligth, sans-serif;
-              & > span {
-                  font-family: Roboto, sans-serif;
-              }
-          }
-      }
-      & > div:last-child {
-          height: 100%;
-          width: 0;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          flex-basis: 0;
-          opacity: 0;
-          transition: all 600ms ease-in-out;
-          & > div {
-              width: 2.5rem;
-              height: 2.5rem;
-              & > svg {
-                  color: white;
-                  transform: rotate(-360deg);
-                  transition: all 500ms ease-in-out;
-              }
-          }
-      }
-      &:hover > div:last-child {
-          width: 40%;
-          opacity: 1;
-          transition: all 500ms ease-in-out;
-          background: $color-tertiary;
-      }
-      &:hover > div:last-child > div > svg {
-          transform: rotate(0);
-      }
-  }*/
 }
 .restaurantSection header {
   display: flex;
   justify-content: space-between;
+  font-family: Shrikhand, sans-serif;
+  font-size: 1.2rem;
 }
 .restaurantSection article header {
   position: relative;
@@ -351,7 +332,7 @@
   bottom: -4px;
   left: 0;
   height: 3px;
-  width: 5%;
+  width: 25%;
   background: #99E2D0;
 }
 .restaurantSection__card {
@@ -415,15 +396,34 @@
   animation-delay: 1125ms;
 }
 .restaurantSection__card__body {
+  width: 100%;
   display: flex;
   justify-content: space-between;
-  flex-direction: column;
   overflow: hidden;
+  padding: 1rem;
+  font-size: 1.2rem;
 }
-.restaurantSection__card__body p {
+@media screen and (min-width: 1024px) {
+  .restaurantSection__card__body {
+    font-size: 1.3rem;
+  }
+}
+.restaurantSection__card__body > p:first-child {
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
+}
+.restaurantSection__card__body > p:first-child > span {
+  font-family: Roboto-Ligth, sans-serif;
+}
+.restaurantSection__card__body > p:last-child {
+  display: flex;
+  justify-content: space-between;
+  font-family: Roboto-Ligth, sans-serif;
+}
+.restaurantSection__card__body > p:last-child > span {
+  align-self: flex-end;
+  font-family: Roboto, sans-serif;
 }
 .restaurantSection__card__valid {
   position: relative;
@@ -433,18 +433,36 @@
   transition: all 400ms ease-in-out;
 }
 .restaurantSection__card__valid > div {
-  width: 30px;
-  height: 30px;
+  width: 25px;
+  height: 25px;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+.restaurantSection__card__valid > div svg {
+  color: white;
+  opacity: 0;
+  transform: rotate(-360deg);
+  transition: all 500ms ease-in-out;
 }
 .restaurantSection__card:hover .restaurantSection__card__valid {
   width: 35%;
   opacity: 1;
   background: #99E2D0;
   transition: all 400ms ease-in-out;
+}
+.restaurantSection__card:hover .restaurantSection__card__valid > div > svg {
+  opacity: 1;
+  transform: rotate(0);
+  transition: all 500ms ease-in-out;
+}
+.restaurantSection__card:hover {
+  cursor: pointer;
+}
+.restaurantSection__btn {
+  display: flex;
+  justify-content: center;
 }
 
 @font-face {

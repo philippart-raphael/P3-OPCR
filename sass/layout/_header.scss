@@ -3,9 +3,23 @@
 
 .header {
     display: flex;
+    position: relative;
     flex-wrap: wrap;
     justify-content: center;
     background: $color-background-primary;
+    & > div:first-child {
+        position: relative;
+        flex-basis: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        & > a:first-child {
+            position: absolute;
+            left: 5%;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
     &__title {
         flex-basis: 100%;
         font-size: 3rem;
