@@ -1,0 +1,52 @@
+@import "../utils/variables";
+
+.load {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background: white;
+    z-index: 99;
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 100%;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    font-family: Shrikhand, sans-serif;
+    animation: loaderHidden 1200ms forwards;
+    animation-delay: 1500ms;
+    & > div:first-child {
+        position: relative;
+        display: flex;
+        justify-content: center;
+    }
+    & > div:first-child::after {
+        position: absolute;
+        content: '';
+        bottom: 0;
+        left: 0;
+        width: 0;
+        height: 2px;
+        background: $linear-gradient-btn;
+        animation: loaderProgress 1000ms ease-in-out forwards;
+        animation-delay: 600ms;
+    }
+    & > div > span {
+        opacity: 0;
+        background-image: $linear-gradient-btn;
+        background-size: 100%;
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -moz-text-fill-color: transparent;
+        animation: loader 800ms ease-in-out forwards;
+        @for $i from 1 through 8 {
+            &:nth-child(#{$i}) {
+                animation-delay: $i * 100ms;
+            }
+        }
+    }
+}
