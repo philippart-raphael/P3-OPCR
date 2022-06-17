@@ -418,6 +418,7 @@
   display: flex;
   justify-content: space-between;
   flex-direction: column;
+  overflow: hidden;
 }
 .restaurantSection__card__body p {
   white-space: nowrap;
