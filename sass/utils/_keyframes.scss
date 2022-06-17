@@ -34,8 +34,10 @@
 @keyframes loaderHidden {
     0% {
         opacity: 1;
+        z-index: 99;
     }
     100% {
         opacity: 0;
+        z-index: -1;
     }
 }
