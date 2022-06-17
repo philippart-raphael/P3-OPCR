@@ -23,19 +23,13 @@
     &__card {
         display: flex;
         align-items: center;
+        justify-content: flex-start;
         padding: 2.5rem 0;
         margin-bottom: 3rem;
         border-radius: 2rem;
+        margin-left: 15px;
         background: darken($color-background-primary, 4%);
         @include makeBoxShadow($inset: false, $offsetX: 2px, $offSetY: 2px, $blur: 6px, $spreadRadius: 0, $color: #c2c2c2);
-        &--active,
-        &:hover {
-            color: $color-primary;
-            background: lighten($color-primary, 35%);
-        }
-        &:hover &__icon {
-            color: $color-primary;
-        }
         &__number {
             position: relative;
             width: 30px;
@@ -52,7 +46,7 @@
             }
         }
         &__icon {
-            width: 15%;
+            width: 20%;
             color: gray;
             font-size: 2rem;
             text-align: center;
@@ -62,6 +56,14 @@
         }
         &__body {
             color: $color-font-dark;
+        }
+        &--active,
+        &:hover {
+            color: $color-primary;
+            background: lighten($color-primary, 35%);
+        }
+        &:hover &__icon {
+            color: $color-primary;
         }
     }
 }
