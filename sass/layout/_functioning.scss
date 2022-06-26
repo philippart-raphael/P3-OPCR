@@ -5,7 +5,8 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    padding: 3rem 2rem;
+    padding: 2.5rem 1.5rem;
+    margin-top: .5rem;
     @include min-desktop {
         justify-content: space-between;
     }
@@ -18,15 +19,16 @@
     }
     &__title {
         flex-basis: 100%;
-        margin-bottom: 3rem;
+        font-size: 1.3rem;
+        margin-bottom: 1rem;
     }
     &__card {
         display: flex;
         align-items: center;
         justify-content: flex-start;
-        padding: 2.5rem 0;
-        margin-bottom: 3rem;
-        border-radius: 2rem;
+        padding: 1rem 0;
+        margin-bottom: 1rem;
+        border-radius: 1.2rem;
         margin-left: 15px;
         background: darken($color-background-primary, 4%);
         @include makeBoxShadow($inset: false, $offsetX: 2px, $offSetY: 2px, $blur: 6px, $spreadRadius: 0, $color: #c2c2c2);
@@ -48,7 +50,7 @@
         &__icon {
             width: 20%;
             color: gray;
-            font-size: 2rem;
+            font-size: 1.1rem;
             text-align: center;
             &--active {
                 color: $color-primary;

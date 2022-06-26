@@ -5,20 +5,21 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    row-gap: 2rem;
-    padding: 3rem 2rem;
+    row-gap: 1rem;
+    padding: 2.5rem 1.5rem;
     background: darken($color-background-primary, 4%);
     &__title {
         flex-basis: 100%;
-        margin-bottom: 1rem;
+        font-size: 1.3rem;
     }
     &__article {
         flex-basis: 100%;
         background: white;
-        border-radius: 2rem;
+        border-radius: 1rem;
         @include makeBoxShadow($inset: false, $offsetX: 2px, $offSetY: 2px, $blur: 6px, $spreadRadius: 0, $color: #c2c2c2);
-        @include min-desktop {
+        @include desktop {
             flex-basis: 49%;
+            flex-wrap: wrap;
         }
         & a {
             color: $color-font-dark;
@@ -38,9 +39,11 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        padding: 1rem;
+        padding: .8rem .7rem;
+        font-size: 1rem;
         & div p:last-child {
             font-family: Roboto-Ligth, sans-serif;
+            font-size: .9rem;
         }
     }
     &__like {
@@ -48,6 +51,7 @@
         width: 2rem;
         height: 2rem;
         margin-right: 2%;
+        font-size: 1.5rem;
         & i {
             position: absolute;
             top: 50%;

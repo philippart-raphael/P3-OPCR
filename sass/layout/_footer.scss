@@ -3,29 +3,24 @@
 .footer {
     color: white;
     background: #353535;
-    padding: 2rem;
+    padding: 1.5rem;
     & ul {
         list-style-type: none;
         font-family: Roboto-Ligth, sans-serif;
         & li:first-child {
-            margin-bottom: 2rem;
-            font-size: 2rem;
+            margin-bottom: 1rem;
+            font-size: 1.3rem;
             font-family: Shrikhand, sans-serif;
         }
         & li {
             margin-bottom: 1rem;
             & a {
-                display: flex;
-
                 color: white;
                 text-decoration: none;
                 & i {
                     width: 20px;
                     height: 20px;
-                    margin-right: 2%;
-                    @include min-desktop {
-                        margin-right: 1%;
-                    }
+                    margin-right: 1%;
                 }
             }
         }
