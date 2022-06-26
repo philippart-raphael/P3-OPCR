@@ -295,13 +295,32 @@
   list-style-type: none;
   font-family: Roboto-Ligth, sans-serif;
 }
+@media screen and (min-width: 992px) {
+  .footer ul {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+}
 .footer ul li:first-child {
   margin-bottom: 1rem;
   font-size: 1.3rem;
   font-family: Shrikhand, sans-serif;
 }
+@media screen and (min-width: 992px) {
+  .footer ul li:first-child {
+    flex-basis: 100%;
+    text-align: center;
+  }
+}
 .footer ul li {
   margin-bottom: 1rem;
+}
+@media screen and (min-width: 992px) {
+  .footer ul li {
+    flex-basis: 25%;
+    text-align: center;
+  }
 }
 .footer ul li a {
   color: white;
