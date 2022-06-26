@@ -31,7 +31,6 @@
   font-size: 2rem;
   font-weight: 500;
   font-family: Shrikhand, sans-serif;
-  margin-top: 0.5rem;
 }
 @media screen and (min-width: 992px) {
   .header__title {
@@ -110,14 +109,12 @@
 }
 
 .btn {
-  display: inline-block;
-  width: auto;
   color: white;
   text-decoration: none;
   font-family: Roboto-Ligth, sans-serif;
   font-size: 0.9rem;
   padding: 1rem 1.2rem;
-  border-radius: 2rem;
+  border-radius: 1.5rem;
   background: #FF79DA;
   background: linear-gradient(to top, #9356DC, #FF79DA);
   box-shadow: 2px 2px 8px 1px #8f8f8f;
@@ -127,7 +124,7 @@
   color: #000;
   background: linear-gradient(to top, #a16be0, #ffc6ef);
   box-shadow: 4px 4px 10px 2px #8f8f8f;
-  transition: all 400ms ease-in-out;
+  transition: all 500ms ease-in-out;
 }
 
 .functioning {
@@ -373,35 +370,26 @@
   }
 }
 .restaurantSection {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  padding: 2rem 2rem 0;
-  border-radius: 3rem 3rem 0 0;
+  padding: 1.5rem 1rem;
+  border-radius: 2rem 2rem 0 0;
   background: #FFF;
   transform: translateY(-3rem);
 }
 .restaurantSection header {
-  flex-basis: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   font-family: Shrikhand, sans-serif;
+}
+.restaurantSection header > h2 {
   font-size: 1.2rem;
-}
-.restaurantSection article {
-  flex-basis: 100%;
-}
-@media screen and (min-width: 992px) {
-  .restaurantSection article {
-    flex-basis: 32%;
-  }
+  font-weight: 200;
 }
 .restaurantSection article header {
   position: relative;
   text-transform: uppercase;
   font-family: Roboto-Ligth, sans-serif;
-  margin: 3rem 0 2rem 0;
+  margin: 2rem 0 1rem 0;
 }
 .restaurantSection article header::after {
   position: absolute;
@@ -409,16 +397,14 @@
   bottom: -4px;
   left: 0;
   height: 3px;
-  width: 20%;
+  width: 12%;
   background: #99E2D0;
 }
 .restaurantSection__card {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 5rem;
-  width: 100%;
-  flex-basis: 100%;
+  height: 3.5rem;
   opacity: 0;
   margin: 1rem 0;
   border-radius: 1rem;
@@ -474,17 +460,12 @@
   animation-delay: 1125ms;
 }
 .restaurantSection__card__body {
-  width: 100%;
   display: flex;
   justify-content: space-between;
   overflow: hidden;
   padding: 1rem;
-  font-size: 1.2rem;
-}
-@media screen and (min-width: 992px) {
-  .restaurantSection__card__body {
-    font-size: 1.3rem;
-  }
+  font-size: 1rem;
+  width: 100%;
 }
 .restaurantSection__card__body > p:first-child {
   white-space: nowrap;
@@ -525,7 +506,7 @@
   transition: all 500ms ease-in-out;
 }
 .restaurantSection__card:hover .restaurantSection__card__valid {
-  width: 35%;
+  width: 6rem;
   opacity: 1;
   background: #99E2D0;
   transition: all 400ms ease-in-out;
@@ -539,9 +520,9 @@
   cursor: pointer;
 }
 .restaurantSection__btn {
-  flex-basis: 100%;
   display: flex;
   justify-content: center;
+  text-align: center;
 }
 
 .load {
