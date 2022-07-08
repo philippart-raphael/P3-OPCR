@@ -88,32 +88,12 @@
   font-size: 0.9rem;
 }
 
-.mt-10 {
-  margin-top: 2rem;
-}
-
-.mt-20 {
-  margin-top: 4rem;
-}
-
-.mb-5 {
-  margin-bottom: 1rem;
-}
-
-.mb-10 {
-  margin-bottom: 2rem;
-}
-
-.mb-20 {
-  margin-bottom: 4rem;
-}
-
 .btn {
   color: white;
   text-decoration: none;
   font-family: Roboto-Ligth, sans-serif;
   font-size: 0.9rem;
-  padding: 1rem 1.2rem;
+  padding: 1rem 1.5rem;
   border-radius: 1.5rem;
   background: #FF79DA;
   background: linear-gradient(to top, #9356DC, #FF79DA);
@@ -625,6 +605,30 @@
 }
 .load > div > span:nth-child(8) {
   animation-delay: 800ms;
+}
+
+.mt-10 {
+  margin-top: 2rem;
+}
+
+.mt-20 {
+  margin-top: 4rem;
+}
+
+.mb-5 {
+  margin-bottom: 1rem;
+}
+
+.mb-10 {
+  margin-bottom: 2rem;
+}
+
+.mb-20 {
+  margin-bottom: 4rem;
+}
+
+.p-btn {
+  padding: 1rem 2.6rem;
 }
 
 @font-face {
