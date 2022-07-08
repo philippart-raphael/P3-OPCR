@@ -401,8 +401,13 @@
 @media screen and (min-width: 992px) {
   .restaurantSection > div {
     display: flex;
+    justify-content: space-between;
     column-gap: 1rem;
   }
+}
+.restaurantSection > div:last-child {
+  display: flex;
+  justify-content: center;
 }
 @media screen and (min-width: 992px) {
   .restaurantSection > div > article {
