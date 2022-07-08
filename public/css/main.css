@@ -163,6 +163,7 @@
   margin-left: 15px;
   background: whitesmoke;
   box-shadow: 2px 2px 6px 0 #c2c2c2;
+  transition: all 500ms ease-in-out;
 }
 .functioning__card__number {
   position: relative;
@@ -194,6 +195,7 @@
 .functioning__card--active, .functioning__card:hover {
   color: #9356DC;
   background: #f2eafb;
+  transition: all 500ms ease-in-out;
 }
 .functioning__card:hover .functioning__card__icon {
   color: #9356DC;

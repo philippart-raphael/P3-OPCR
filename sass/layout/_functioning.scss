@@ -32,6 +32,7 @@
         margin-left: 15px;
         background: darken($color-background-primary, 4%);
         @include makeBoxShadow($inset: false, $offsetX: 2px, $offSetY: 2px, $blur: 6px, $spreadRadius: 0, $color: #c2c2c2);
+        transition: all 500ms ease-in-out;
         &__number {
             position: relative;
             width: 30px;
@@ -63,6 +64,7 @@
         &:hover {
             color: $color-primary;
             background: lighten($color-primary, 35%);
+            transition: all 500ms ease-in-out;
         }
         &:hover &__icon {
             color: $color-primary;
