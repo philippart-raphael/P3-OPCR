@@ -6,7 +6,7 @@
     padding: 1.5rem 1rem;
     border-radius: 2rem 2rem 0 0;
     background: $color-background-primary;
-    transform: translateY(-3rem);
+    transform: translateY(-2rem);
     & header {
         display: flex;
         justify-content: space-between;
@@ -17,7 +17,17 @@
             font-weight: 200
         }
     }
-    & article {
+    & > div {
+        @include desktop {
+            display: flex;
+            column-gap: 1rem;
+        }
+    }
+    & > div > article {
+        @include desktop {
+            flex-basis: 32%;
+            min-width: 32%;
+        }
         & header {
             position: relative;
             text-transform: uppercase;
