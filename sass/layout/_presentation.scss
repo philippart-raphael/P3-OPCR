@@ -2,7 +2,7 @@
 @import "../utils/mixins";
 
 .presentation {
-    padding: 2rem;
+    padding: 2rem 2rem 4rem 2rem;
     text-align: center;
     font-size: 1rem;
     background: darken($color-background-primary, 4%);

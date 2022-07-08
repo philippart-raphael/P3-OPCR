@@ -11,6 +11,7 @@
   position: relative;
   flex-wrap: wrap;
   justify-content: center;
+  padding: 10px 0 2px 0;
   background: #FFF;
 }
 .header > div:first-child {
@@ -78,7 +79,7 @@
 }
 
 .presentation {
-  padding: 2rem;
+  padding: 2rem 2rem 4rem 2rem;
   text-align: center;
   font-size: 1rem;
   background: whitesmoke;
