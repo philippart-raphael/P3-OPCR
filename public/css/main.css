@@ -11,7 +11,6 @@
   position: relative;
   flex-wrap: wrap;
   justify-content: center;
-  padding: 10px 0 2px 0;
   background: #FFF;
 }
 .header > div:first-child {
