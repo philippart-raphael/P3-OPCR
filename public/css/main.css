@@ -26,6 +26,9 @@
   top: 50%;
   transform: translateY(-50%);
 }
+.header a > i {
+  font-size: 1rem;
+}
 .header__title {
   flex-basis: 100%;
   font-size: 2rem;

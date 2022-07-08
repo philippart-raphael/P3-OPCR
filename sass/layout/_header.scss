@@ -20,6 +20,9 @@
             transform: translateY(-50%);
         }
     }
+    & a > i {
+        font-size: 1rem;
+    }
     &__title {
         flex-basis: 100%;
         font-size: 2rem;
