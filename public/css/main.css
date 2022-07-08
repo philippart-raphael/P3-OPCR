@@ -6,6 +6,10 @@
   margin: 0;
 }
 
+h1 {
+  font-size: 1.3rem;
+}
+
 .header {
   display: flex;
   position: relative;
