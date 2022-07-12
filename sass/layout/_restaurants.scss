@@ -54,6 +54,9 @@
         justify-content: space-between;
         padding: .8rem .7rem;
         font-size: 1rem;
+        & h3 {
+            font-size: 1rem;
+        }
         & div p:last-child {
             font-family: Roboto-Ligth, sans-serif;
             font-size: .9rem;

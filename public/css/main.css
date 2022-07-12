@@ -245,6 +245,9 @@ h1 {
   padding: 0.8rem 0.7rem;
   font-size: 1rem;
 }
+.restaurants__body h3 {
+  font-size: 1rem;
+}
 .restaurants__body div p:last-child {
   font-family: Roboto-Ligth, sans-serif;
   font-size: 0.9rem;
